@@ -1,0 +1,56 @@
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+.paddingBottom100 {
+    padding-bottom: 100px;
+}
+
+.bbrder {
+    border-bottom: solid rgb(128, 127, 127) 2px;
+    width: 90%;
+}
+
+.pdleft10 {
+    padding-left: 5%;
+}
+
+.pdtop20 {
+    padding-top: 20px;
+}
+
+.mrtZero {
+    margin-top: 0px;
+}
+
+.mrbZero {
+    margin-bottom: 0px;
+}
+
+.w90 {
+    width: 90%
+}
+.bRight {
+    border-right: solid lightblue 1px;
+}
+
+.pRight5 {
+    padding-right: 5px;
+}
+
+.pd5 {
+    padding: 5px;
+}
+
+.mrl0 {
+    margin-left: 0px;
+}
+
+.botBrder {
+    border-bottom: solid rgb(128, 127, 127) 2px;
+}
+
+.paddingBottom20 {
+    padding-bottom: 20px;
+}

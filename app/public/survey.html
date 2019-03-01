@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Platonic Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.4.93/css/materialdesignicons.min.css">
+
+    <!-- <link rel="stylesheet" href="./app/CSS/style.css"> -->
+
+
+</head>
+
+<body>
+    <div class="container grey lighten-4 paddingBottom100">
+        <div class="row">
+            <h4 class="pdtop20 pdleft10 mrtZero mrbZero">Survey</h4>
+
+        </div>
+        <div class="row bbrder">
+
+        </div>
+        <div class="row">
+            <h5 class="pdleft10 mrtZero">
+                About You.
+            </h5>
+        </div>
+
+        <div class="row pdleft10">
+            <form class="col s7 pdleft10">
+                <div class="row">
+                    <div class="input-field col s12 m8 l5">
+                        <input id="name" type="text" class="validate" required>
+                        <label for="name">Name</label>
+                        <span class="helper-text" data-error="This is a required field!"
+                            data-success="Thank you!">Required</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row pdleft10">
+            <form class="col s12 m8 l5">
+                Link to Photo Image:
+                <div class="input-field">
+                    <input id="photo_inline" type="text" class="validate" required>
+                    <label for="photo_inline">Link to Photo Image</label>
+                    <span class="helper-text" data-error="This is a required field!"
+                        data-success="Thank you!">Required</span>
+                </div>
+            </form>
+        </div>
+        <div class="row bbrder paddingBottom20">
+
+        </div>
+        <div class="row center">
+            <div class="col s12">
+                <h5 class="paddingBottom20 align-center">
+                    Answer the questions below by selecting a value from 1 to 5, where 1 is strongly disagree and 5 is
+                    strongly agree.
+                </h5>
+            </div>
+        </div>
+        <div class="row bbrder">
+
+        </div>
+        <div class="container">
+            <form>
+                <div class="row pdtop20">
+
+                    <h5>1) Superman is a joke, Batman reigns supreme.</h5>
+                    <div class="input-field col s8" data-target="questionOne">
+                        <select id="questionOne" class="validate" required>
+                            <option value="" disabled selected>Select a value.</option>
+                            <option value=1>Strongly Agree</option>
+                            <option value=2>Somewhat Agree</option>
+                            <option value=3>Agree</option>
+                            <option value=4>Somewhat Disagree</option>
+                            <option value=5>Disagree</option>
+                        </select>
+                        <label>Agree or Disagree</label>
+                    </div>
+                </div>
+                <div class="row pdtop20">
+
+                    <h5>2) Ideal first date: local comic book shop and lunch/dinner thereafter.</h5>
+                    <div class="input-field col s8" data-target="questionTwo">
+                        <select id="questionTwo" class="validate" required>
+                            <option value="" disabled selected>Select a value.</option>
+                            <option value=1>Strongly Agree</option>
+                            <option value=2>Somewhat Agree</option>
+                            <option value=3>Agree</option>
+                            <option value=4>Somewhat Disagree</option>
+                            <option value=5>Disagree</option>
+                        </select>
+                        <label>Agree or Disagree</label>
+                    </div>
+                </div>
+
+                <div class="row pdtop20">
+
+                    <h5>3) Dark Zone for life!</h5>
+                    <div class="input-field col s8" data-target="dropDown">
+                        <select id="questionThree" class="validate" required>
+                            <option value="" disabled selected>Select a value.</option>
+                            <option value=1>Strongly Agree</option>
+                            <option value=2>Somewhat Agree</option>
+                            <option value=3>Agree</option>
+                            <option value=4>Somewhat Disagree</option>
+                            <option value=5>Disagree</option>
+                        </select>
+                        <label>Agree or Disagree</label>
+                    </div>
+                </div>
+
+                <div class="row pdtop20">
+
+                    <h5>4) I can't keep pets around because they get dander on my collectibles!</h5>
+                    <div class="input-field col s8" data-target="dropDown">
+                        <select id="questionFour" class="validate" required>
+                            <option value="" disabled selected>Select a value.</option>
+                            <option value=1>Strongly Agree</option>
+                            <option value=2>Somewhat Agree</option>
+                            <option value=3>Agree</option>
+                            <option value=4>Somewhat Disagree</option>
+                            <option value=5>Disagree</option>
+                        </select>
+                        <label>Agree or Disagree</label>
+                    </div>
+                </div>
+
+                <div class="row pdtop20">
+
+                    <h5>5) Playstation won this gen's console war.</h5>
+                    <div class="input-field col s8" data-target="dropDown">
+                        <select id="questionFive" class="validate" required>
+                            <option value="" disabled selected>Select a value.</option>
+                            <option value=1>Strongly Agree</option>
+                            <option value=2>Somewhat Agree</option>
+                            <option value=3>Agree</option>
+                            <option value=4>Somewhat Disagree</option>
+                            <option value=5>Disagree</option>
+                        </select>
+                        <label>Agree or Disagree</label>
+                    </div>
+                </div>
+
+                <div class="row pdtop20">
+
+                    <h5>6) Pizza all the time!</h5>
+                    <div class="input-field col s8" data-target="dropDown">
+                        <select id="questionSix" class="validate" required>
+                            <option value="" disabled selected>Select a value.</option>
+                            <option value=1>Strongly Agree</option>
+                            <option value=2>Somewhat Agree</option>
+                            <option value=3>Agree</option>
+                            <option value=4>Somewhat Disagree</option>
+                            <option value=5>Disagree</option>
+                        </select>
+                        <label>Agree or Disagree</label>
+                    </div>
+                </div>
+
+                <div class="row pdtop20">
+
+                    <h5>7) A Gif is worth 10k+ words!</h5>
+                    <div class="input-field col s8" data-target="dropDown">
+                        <select id="questionSeven" class="validate" required>
+                            <option value="" disabled selected>Select a value.</option>
+                            <option value=1>Strongly Agree</option>
+                            <option value=2>Somewhat Agree</option>
+                            <option value=3>Agree</option>
+                            <option value=4>Somewhat Disagree</option>
+                            <option value=5>Disagree</option>
+                        </select>
+                        <label>Agree or Disagree</label>
+                    </div>
+                </div>
+
+                <div class="row pdtop20">
+
+                    <h5>8) You miss the double down from KFC</h5>
+                    <div class="input-field col s8" data-target="dropDown">
+                        <select id="questionEight" class="validate" required>
+                            <option value="" disabled selected>Select a value.</option>
+                            <option value=1>Strongly Agree</option>
+                            <option value=2>Somewhat Agree</option>
+                            <option value=3>Agree</option>
+                            <option value=4>Somewhat Disagree</option>
+                            <option value=5>Disagree</option>
+                        </select>
+                        <label>Agree or Disagree</label>
+                    </div>
+                </div>
+
+                <div class="row pdtop20">
+
+                    <h5>9) The Beach is ok as long as I keep my SPF 100!</h5>
+                    <div class="input-field col s8" data-target="dropDown">
+                        <select id="questionNine" class="validate" required>
+                            <option value="" disabled selected>Select a value.</option>
+                            <option value=1>Strongly Agree</option>
+                            <option value=2>Somewhat Agree</option>
+                            <option value=3>Agree</option>
+                            <option value=4>Somewhat Disagree</option>
+                            <option value=5>Disagree</option>
+                        </select>
+                        <label>Agree or Disagree</label>
+                    </div>
+                </div>
+
+                <div class="row pdtop20">
+
+                    <h5>10) Disney all day every day!</h5>
+                    <div class="input-field col s8" data-target="dropDown">
+                        <select id="questionTen" class="validate" required>
+                            <option value="" disabled selected>Select a value.</option>
+                            <option value=1>Strongly Agree</option>
+                            <option value=2>Somewhat Agree</option>
+                            <option value=3>Agree</option>
+                            <option value=4>Somewhat Disagree</option>
+                            <option value=5>Disagree</option>
+                        </select>
+                        <label>Agree or Disagree</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        </form>
+        <div class="row pdleft10">
+            <button id="submit" class="btn waves-effect waves-light grey darken-3" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <a class="bRight pd5" href="" target="blank">API Friends List</a>
+            <a class="pd5" href="" target="blank">Github Repo</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+
+
+    <script type="application/javascript">
+        var notNull = false;
+        // var differences = [];
+        var totalDifference;
+        var difference = 0;
+        var userInput;
+        var users = [
+            {
+                "name": "Ahmed",
+                "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+                "scores": [
+                    5,
+                    1,
+                    4,
+                    4,
+                    5,
+                    1,
+                    2,
+                    5,
+                    4,
+                    1
+                ]
+            }
+
+        ]
+
+        // Question: What does this code do?
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            userInput = {
+                name: $("#name").val(),
+                photo: $("#photo_inline").val(),
+                scores: [
+                    parseInt($("#questionOne").val()),
+                    parseInt($("#questionTwo").val()),
+                    parseInt($("#questionThree").val()),
+                    parseInt($("#questionFour").val()),
+                    parseInt($("#questionFive").val()),
+                    parseInt($("#questionSix").val()),
+                    parseInt($("#questionSeven").val()),
+                    parseInt($("#questionEight").val()),
+                    parseInt($("#questionNine").val()),
+                    parseInt($("#questionTen").val()),
+                ]
+            }
+            validateEverything()
+        });
+
+        function calculateDifferences() {
+            users.forEach((user) => {
+                console.log("running");
+                for (i = 0; i < user.scores.length; i++) {
+                    var differences = Math.abs(user.scores[i] - userInput.scores[i]);
+                    difference = (difference + differences)
+                    console.log(difference)
+                }
+
+            })
+        }
+
+        function validateEverything() {
+            $(".validate").each(function () {
+                if ($(this).val() == "" || $(this).val() === null) {
+                    notNull = false;
+                    // i++;
+                } else {
+                    notNull = true;
+                }
+
+
+                console.log("line 324 reached")
+
+
+            });
+            if (notNull === true) {
+                calculateDifferences();
+                console.log("calculate ran")
+            }
+        }
+
+        $(document).ready(function () {
+
+            $('select').formSelect();
+        })
+
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+        });
+
+    </script>
+
+
+
+
+    <style type="text/css">
+        body {
+            font-family: 'Cabin', sans-serif;
+        }
+
+        .paddingBottom100 {
+            padding-bottom: 100px;
+        }
+
+        .bbrder {
+            border-bottom: solid rgb(128, 127, 127) 2px;
+            width: 90%;
+        }
+
+        .pdleft10 {
+            padding-left: 5%;
+        }
+
+        .pdtop20 {
+            padding-top: 20px;
+        }
+
+        .mrtZero {
+            margin-top: 0px;
+        }
+
+        .mrbZero {
+            margin-bottom: 0px;
+        }
+
+        .w90 {
+            width: 90%
+        }
+
+        .bRight {
+            border-right: solid lightblue 1px;
+        }
+
+        .pRight5 {
+            padding-right: 5px;
+        }
+
+        .pd5 {
+            padding: 5px;
+        }
+
+        .mrl0 {
+            margin-left: 0px;
+        }
+
+        .botBrder {
+            border-bottom: solid rgb(128, 127, 127) 2px;
+        }
+
+        .paddingBottom20 {
+            padding-bottom: 20px;
+        }
+    </style>
+</body>
+
+</html>
