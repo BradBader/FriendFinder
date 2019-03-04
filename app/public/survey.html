@@ -34,9 +34,9 @@
         </div>
 
         <div class="row pdleft10">
-            <form class="col s7 pdleft10">
+            <form class="col s12 m5 l5">
                 <div class="row">
-                    <div class="input-field col s12 m8 l5">
+                    <div class="input-field col s12 m12 l12">
                         <input id="name" type="text" class="validate" required>
                         <label for="name">Name</label>
                         <span class="helper-text" data-error="This is a required field!"
@@ -45,8 +45,9 @@
                 </div>
             </form>
         </div>
+
         <div class="row pdleft10">
-            <form class="col s12 m8 l5">
+            <form class="col s12 m5 l5">
                 Link to Photo Image:
                 <div class="input-field">
                     <input id="photo_inline" type="text" class="validate" required>
@@ -56,6 +57,13 @@
                 </div>
             </form>
         </div>
+
+        <div class="col s12 m7 l7">
+            <h4><span id="match"></span></h4>
+            <img id="photo" src="" alt="" width="auto" height="auto">
+
+        </div>
+
         <div class="row bbrder paddingBottom20">
 
         </div>
@@ -80,9 +88,9 @@
                             <option value="" disabled selected>Select a value.</option>
                             <option value=1>Strongly Agree</option>
                             <option value=2>Somewhat Agree</option>
-                            <option value=3>Agree</option>
+                            <option value=3>Completely Neutral</option>
                             <option value=4>Somewhat Disagree</option>
-                            <option value=5>Disagree</option>
+                            <option value=5>Strongly Disagree</option>
                         </select>
                         <label>Agree or Disagree</label>
                     </div>
@@ -95,9 +103,9 @@
                             <option value="" disabled selected>Select a value.</option>
                             <option value=1>Strongly Agree</option>
                             <option value=2>Somewhat Agree</option>
-                            <option value=3>Agree</option>
+                            <option value=3>Completely Neutral</option>
                             <option value=4>Somewhat Disagree</option>
-                            <option value=5>Disagree</option>
+                            <option value=5>Strongly Disagree</option>
                         </select>
                         <label>Agree or Disagree</label>
                     </div>
@@ -111,9 +119,9 @@
                             <option value="" disabled selected>Select a value.</option>
                             <option value=1>Strongly Agree</option>
                             <option value=2>Somewhat Agree</option>
-                            <option value=3>Agree</option>
+                            <option value=3>Completely Neutral</option>
                             <option value=4>Somewhat Disagree</option>
-                            <option value=5>Disagree</option>
+                            <option value=5>Strongly Disagree</option>
                         </select>
                         <label>Agree or Disagree</label>
                     </div>
@@ -127,9 +135,9 @@
                             <option value="" disabled selected>Select a value.</option>
                             <option value=1>Strongly Agree</option>
                             <option value=2>Somewhat Agree</option>
-                            <option value=3>Agree</option>
+                            <option value=3>Completely Neutral</option>
                             <option value=4>Somewhat Disagree</option>
-                            <option value=5>Disagree</option>
+                            <option value=5>Strongly Disagree</option>
                         </select>
                         <label>Agree or Disagree</label>
                     </div>
@@ -143,9 +151,9 @@
                             <option value="" disabled selected>Select a value.</option>
                             <option value=1>Strongly Agree</option>
                             <option value=2>Somewhat Agree</option>
-                            <option value=3>Agree</option>
+                            <option value=3>Completely Neutral</option>
                             <option value=4>Somewhat Disagree</option>
-                            <option value=5>Disagree</option>
+                            <option value=5>Strongly Disagree</option>
                         </select>
                         <label>Agree or Disagree</label>
                     </div>
@@ -159,9 +167,9 @@
                             <option value="" disabled selected>Select a value.</option>
                             <option value=1>Strongly Agree</option>
                             <option value=2>Somewhat Agree</option>
-                            <option value=3>Agree</option>
+                            <option value=3>Completely Neutral</option>
                             <option value=4>Somewhat Disagree</option>
-                            <option value=5>Disagree</option>
+                            <option value=5>Strongly Disagree</option>
                         </select>
                         <label>Agree or Disagree</label>
                     </div>
@@ -175,9 +183,9 @@
                             <option value="" disabled selected>Select a value.</option>
                             <option value=1>Strongly Agree</option>
                             <option value=2>Somewhat Agree</option>
-                            <option value=3>Agree</option>
+                            <option value=3>Completely Neutral</option>
                             <option value=4>Somewhat Disagree</option>
-                            <option value=5>Disagree</option>
+                            <option value=5>Strongly Disagree</option>
                         </select>
                         <label>Agree or Disagree</label>
                     </div>
@@ -191,9 +199,9 @@
                             <option value="" disabled selected>Select a value.</option>
                             <option value=1>Strongly Agree</option>
                             <option value=2>Somewhat Agree</option>
-                            <option value=3>Agree</option>
+                            <option value=3>Completely Neutral</option>
                             <option value=4>Somewhat Disagree</option>
-                            <option value=5>Disagree</option>
+                            <option value=5>Strongly Disagree</option>
                         </select>
                         <label>Agree or Disagree</label>
                     </div>
@@ -207,9 +215,9 @@
                             <option value="" disabled selected>Select a value.</option>
                             <option value=1>Strongly Agree</option>
                             <option value=2>Somewhat Agree</option>
-                            <option value=3>Agree</option>
+                            <option value=3>Completely Neutral</option>
                             <option value=4>Somewhat Disagree</option>
-                            <option value=5>Disagree</option>
+                            <option value=5>Strongly Disagree</option>
                         </select>
                         <label>Agree or Disagree</label>
                     </div>
@@ -223,9 +231,9 @@
                             <option value="" disabled selected>Select a value.</option>
                             <option value=1>Strongly Agree</option>
                             <option value=2>Somewhat Agree</option>
-                            <option value=3>Agree</option>
+                            <option value=3>Completely Neutral</option>
                             <option value=4>Somewhat Disagree</option>
-                            <option value=5>Disagree</option>
+                            <option value=5>Strongly Disagree</option>
                         </select>
                         <label>Agree or Disagree</label>
                     </div>
@@ -249,41 +257,45 @@
             <a class="pd5" href="" target="blank">Github Repo</a>
         </div>
     </div>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4><span id="match"></span></h4>
+            <img id="photo" src="" alt="" width="auto" height="auto">
+
+        </div>
+    </div>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
 
 
     <script type="application/javascript">
+        // console.log(users)
+        var differencesArray = [];
+        var smallest;
+        var spaghettiMatch;
         var notNull = false;
         // var differences = [];
-        var totalDifference;
+        var totalDifference = 0;
         var difference = 0;
         var userInput;
-        var users = [
-            {
-                "name": "Ahmed",
-                "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-                "scores": [
-                    5,
-                    1,
-                    4,
-                    4,
-                    5,
-                    1,
-                    2,
-                    5,
-                    4,
-                    1
-                ]
-            }
+        var users;
+        $.ajax("/api/friends", {
+            type: "GET"
+        }).then(function (data) {
+            users = data;
+            console.log(users)
+        });
 
-        ]
-
-        // Question: What does this code do?
+        // Submit button code
         $("#submit").on("click", function (event) {
+            notNull = false;
             event.preventDefault();
-
+            // new object - userInput taken from input
             userInput = {
                 name: $("#name").val(),
                 photo: $("#photo_inline").val(),
@@ -302,47 +314,76 @@
             }
             validateEverything()
         });
-
+        // calculates differences between existing user scores and recently input score
         function calculateDifferences() {
+            differencesArray = [];
+
             users.forEach((user) => {
-                console.log("running");
+                difference = 0;
                 for (i = 0; i < user.scores.length; i++) {
                     var differences = Math.abs(user.scores[i] - userInput.scores[i]);
                     difference = (difference + differences)
                     console.log(difference)
                 }
-
+                differencesArray.push(difference)
             })
+
+            console.log("this is the difference between the users " + differencesArray)
+
         }
 
         function validateEverything() {
             $(".validate").each(function () {
                 if ($(this).val() == "" || $(this).val() === null) {
                     notNull = false;
-                    // i++;
                 } else {
                     notNull = true;
                 }
-
-
-                console.log("line 324 reached")
-
-
             });
             if (notNull === true) {
                 calculateDifferences();
-                console.log("calculate ran")
+                users.push(userInput);
+                userComparison()
             }
         }
 
-        $(document).ready(function () {
+        function userComparison() {
+            smallest = differencesArray[0];
+            differencesArray.forEach((difference) => {
+                console.log(smallest)
+                console.log(difference)
 
+                if (difference < smallest) {
+                    smallest = difference;
+                }
+
+
+            })
+            spaghettiMatch = (differencesArray.indexOf(smallest))
+            console.log(spaghettiMatch)
+            console.log("Your friend match is:" + users[spaghettiMatch].name)
+            $.ajax("/api/friends", {
+                type: "POST"
+            }).then(function (data) {
+                $("#match").text(users[spaghettiMatch].name);
+                $("#photo").attr("src", users[spaghettiMatch].photo);
+                console.log("post happened, what did it do")
+                $('.modal').modal();
+                $(".modal").open();
+            });
+            // $.post("/api/friends", userInput, function (data) {
+      
+         
+            // });
+
+        }
+
+        $(document).ready(function () {
             $('select').formSelect();
+
+
         })
 
-        $("#submit").on("click", function (event) {
-            event.preventDefault();
-        });
 
     </script>
 
