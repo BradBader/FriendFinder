@@ -257,12 +257,12 @@
             <a class="pd5" href="" target="blank">Github Repo</a>
         </div>
     </div>
-    <a class="waves-effect waves-light btn grey darken-5 modal-trigger" href="#modal1">Modal</a>
+    <!-- <a class="waves-effect waves-light btn grey darken-5 modal-trigger" href="#modal1">Modal</a> -->
 
     <div id="modal1" class="modal">
         <div class="modal-content">
-            <h4><span id="match"></span></h4>
-            <img id="photo" src="" alt="" width="auto" height="auto">
+            <h4><span id="matchUser"></span></h4>
+            <img id="photoUser" src="" alt="" width="auto" height="auto">
 
         </div>
     </div>
@@ -361,19 +361,17 @@
             spaghettiMatch = (differencesArray.indexOf(smallest))
             console.log(spaghettiMatch)
             console.log("Your friend match is:" + users[spaghettiMatch].name)
-            $.ajax("/api/friends", {
-                type: "POST"
+            $.ajax("/api/friends/match", {
+                type: "POST",
+                data: userInput,
             }).then(function (data) {
-                $("#match").text(users[spaghettiMatch].name);
-                $("#photo").attr("src", users[spaghettiMatch].photo);
+                $("#matchUser").text(users[spaghettiMatch].name);
+                $("#photoUser").attr("src", users[spaghettiMatch].photo);
                 console.log("post happened, what did it do")
                 $('.modal').modal();
-                $(".modal").open();
+                var instance = M.Modal.getInstance(document.getElementById('modal1'));
+                instance.open();
             });
-            // $.post("/api/friends", userInput, function (data) {
-      
-         
-            // });
 
         }
 
